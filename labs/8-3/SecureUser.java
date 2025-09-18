@@ -7,6 +7,10 @@ public class SecureUser implements Serializable {
     private String username;
     private boolean isAdmin;
 
+    // No-argument constructor for reflection-based object creation in exploit
+    public SecureUser() {
+    }
+
     public SecureUser(String username, boolean isAdmin) {
         validateUser(username, isAdmin);
         this.username = username;
@@ -21,7 +25,7 @@ public class SecureUser implements Serializable {
         return isAdmin;
     }
 
-    // Secure readObject method: performs validation during deserialization
+    // This readObject method is secure because it re-validates the object's state
     private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
         in.defaultReadObject(); // Deserialize fields
         // Perform the same validation as the constructor

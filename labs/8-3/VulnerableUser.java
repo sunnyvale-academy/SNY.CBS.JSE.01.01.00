@@ -3,11 +3,16 @@ import java.io.ObjectInputStream;
 import java.io.Serializable;
 
 public class VulnerableUser implements Serializable {
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L; // Consistent serialVersionUID
     private String username;
     private boolean isAdmin;
 
+    // No-argument constructor for reflection-based object creation in exploit
+    public VulnerableUser() {
+    }
+
     public VulnerableUser(String username, boolean isAdmin) {
+        // Constructor validation
         if (isAdmin && !"admin".equals(username)) {
             throw new IllegalArgumentException("Only \'admin\' user can be an administrator.");
         }
