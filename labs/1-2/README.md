@@ -38,12 +38,12 @@ for (int i = 0; i < maxFiles; i++) {
         // Calling processData with throwException=true will prevent the FileWriter from being closed
         // in the vulnerable implementation.
         handler.processData(filename, "Leaked data for file " + i, true);
-        openedFiles++;
     } catch (IOException e) {
         System.err.println("Caught exception after opening " + openedFiles + " files: " + e.getMessage());
         System.err.println("Exploit successful: Resource exhaustion (e.g., Too many open files) likely occurred.");
         break; // Stop if an exception occurs, indicating resource exhaustion
     } // ...
+    openedFiles++;
 }
 ```
 
