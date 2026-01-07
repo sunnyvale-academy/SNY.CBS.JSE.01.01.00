@@ -6,6 +6,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 
 
 - [Lab 0-4](labs/0-4/README.md) / FUNDAMENTALS-4: Establish trust boundaries
+- [Lab 1-1](labs/1-1/README.md) / DOS-1: Do not expose methods that use a large amount of resources
 - [Lab 1-2](labs/1-2/README.md) / DOS-2: Release resources in all cases
 - [Lab 2-1](labs/2-1/README.md) / CONFIDENTIAL-1: Purge sensitive information from exceptions
 - [Lab 3-2](labs/3-2/README.md) / INJECT-2: Avoid dynamic SQL
