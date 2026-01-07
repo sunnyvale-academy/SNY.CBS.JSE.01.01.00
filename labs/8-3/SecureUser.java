@@ -4,10 +4,16 @@ import java.io.Serializable;
 
 public class SecureUser implements Serializable {
     private static final long serialVersionUID = 1L;
+    private String username;
     private boolean isAdmin;
 
-    public SecureUser(boolean isAdmin) {
-        validateAdminStatus(isAdmin);
+    // Default constructor for reflection in Exploit
+    public SecureUser() {
+    }
+
+    public SecureUser(String username, boolean isAdmin) {
+        validateUser(username, isAdmin);
+        this.username = username;
         this.isAdmin = isAdmin;
     }
 
@@ -15,22 +21,24 @@ public class SecureUser implements Serializable {
         return isAdmin;
     }
 
-    // This readObject method is secure because it re-validates the object's state
-    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
-        in.defaultReadObject(); // Deserialize fields
-        // Perform the same validation as the constructor
-        validateAdminStatus(this.isAdmin);
+    public String getUsername() {
+        return username;
     }
 
-    private void validateAdminStatus(boolean isAdmin) {
-        if (isAdmin) {
-            throw new IllegalArgumentException("Deserialization failed: Direct creation of admin user is not allowed.");
+    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
+        in.defaultReadObject();
+        // SECURE: Re-apply validation after deserialization
+        validateUser(this.username, this.isAdmin);
+    }
+
+    private void validateUser(String username, boolean isAdmin) {
+        if (isAdmin && !"admin".equals(username)) {
+            throw new IllegalArgumentException("Only 'admin' user can be an administrator.");
         }
     }
 
     @Override
     public String toString() {
-        return "User{isAdmin=" + isAdmin + "}";
+        return "User{username='" + username + "', isAdmin=" + isAdmin + "}";
     }
 }
-
