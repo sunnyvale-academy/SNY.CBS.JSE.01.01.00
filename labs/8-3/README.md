@@ -55,3 +55,16 @@ private void validateUser(String username, boolean isAdmin) {
 
 By ensuring that the `readObject` method explicitly calls the validation logic, any attempt to deserialize a malicious object that violates the class's invariants will be caught, preventing unauthorized privilege escalation. This adheres to Guideline 8-3 / SERIAL-3 by treating deserialization as equivalent to object construction in terms of security validation.
 
+## How to Run the Lab
+
+### 1. Compile
+```bash
+javac *.java
+```
+
+### 2. Run the Exploit
+```bash
+java Exploit
+```
+
+Observe how the exploit can bypass construction-time validation via deserialization if `readObject` is not correctly implemented.

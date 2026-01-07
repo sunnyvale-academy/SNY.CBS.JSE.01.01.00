@@ -4,21 +4,11 @@ import java.io.Serializable;
 
 public class SecureUser implements Serializable {
     private static final long serialVersionUID = 1L;
-    private String username;
     private boolean isAdmin;
 
-    // No-argument constructor for reflection-based object creation in exploit
-    public SecureUser() {
-    }
-
-    public SecureUser(String username, boolean isAdmin) {
-        validateUser(username, isAdmin);
-        this.username = username;
+    public SecureUser(boolean isAdmin) {
+        validateAdminStatus(isAdmin);
         this.isAdmin = isAdmin;
-    }
-
-    public String getUsername() {
-        return username;
     }
 
     public boolean isAdmin() {
@@ -29,18 +19,18 @@ public class SecureUser implements Serializable {
     private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
         in.defaultReadObject(); // Deserialize fields
         // Perform the same validation as the constructor
-        validateUser(this.username, this.isAdmin);
+        validateAdminStatus(this.isAdmin);
     }
 
-    private void validateUser(String username, boolean isAdmin) {
-        if (isAdmin && !"admin".equals(username)) {
-            throw new IllegalArgumentException("Only 'admin' user can be an administrator.");
+    private void validateAdminStatus(boolean isAdmin) {
+        if (isAdmin) {
+            throw new IllegalArgumentException("Deserialization failed: Direct creation of admin user is not allowed.");
         }
     }
 
     @Override
     public String toString() {
-        return "User{username='" + username + "', isAdmin=" + isAdmin + "}";
+        return "User{isAdmin=" + isAdmin + "}";
     }
 }
 

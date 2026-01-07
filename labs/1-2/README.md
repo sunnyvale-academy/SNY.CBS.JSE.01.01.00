@@ -69,3 +69,16 @@ public void processData(String filename, String data, boolean throwException) th
 
 The try-with-resources statement ensures that any resource that implements `java.lang.AutoCloseable` (like `FileWriter`) is automatically closed at the end of the `try` block, regardless of whether the `try` block completes normally or abruptly due to an exception. This guarantees that file handles are always released, preventing resource exhaustion and Denial of Service attacks related to unreleased resources. This adheres to Guideline 1-2 / DOS-2 by ensuring resources are released in all cases.
 
+## How to Run the Lab
+
+### 1. Compile
+```bash
+javac *.java
+```
+
+### 2. Run the Exploit
+```bash
+java ResourceLeakExploit
+```
+
+Observe the output to see how the vulnerable handler exhausts file handles, while the secure handler (if substituted in the exploit) would prevent this.
