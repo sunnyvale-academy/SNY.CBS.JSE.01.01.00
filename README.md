@@ -17,6 +17,9 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 8-3](labs/8-3/README.md) / SERIAL-3: View deserialization the same as object construction
 - [Lab 9-3](labs/9-3/README.md) / ACCESS-3: Safely invoke doPrivileged
 
+### Exercises
+- [Exercise 0-4 (Billion Laughs Attack)](exercises/0-4/README.md)
+
 
 References:
 
