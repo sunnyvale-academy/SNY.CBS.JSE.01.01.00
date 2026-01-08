@@ -26,7 +26,10 @@ When a vulnerable parser tries to expand these entities, it consumes massive amo
 In this folder, you will find:
 1.  `VulnerableXmlParser.java`: A parser that uses default settings, allowing entity expansion.
 2.  `BillionLaughsExploit.java`: A PoC that sends a small but exponentially expanding XML to the parser.
-3.  `SecureXmlParser.java`: A parser configured to reject DTDs and prevent this attack.
+
+What you have to do:
+1.  Implement the corresponding `SecureXmlParser.java` and configure it to parse XML rejecting DTDs to prevent the attack.
+2.  Uncomment the "// Step 3: Test Secure Parser" block in `BillionLaughsExploit.java` to test your `SecureXmlParser.java` implementation.
 
 ### Observe the Results
 
@@ -42,7 +45,7 @@ When you run the exploit, you will see:
 
 ### 1. Compile
 ```bash
-javac *.java
+javac *.java ../../../solutions/1-1/billion-laughs/*.java
 ```
 
 ### 2. Run the Exploit

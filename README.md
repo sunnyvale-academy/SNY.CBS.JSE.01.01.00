@@ -19,6 +19,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 
 ### Exercises
 - [Exercise 0-4 (Billion Laughs Attack)](exercises/0-4/billion-laughs/README.md)
+- [Exercise 1-1 (Denial of Service - Billion Laughs)](exercises/1-1/billion-laughs/README.md)
 
 
 References:
