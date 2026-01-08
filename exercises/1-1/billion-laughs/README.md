@@ -45,7 +45,7 @@ When you run the exploit, you will see:
 
 ### 1. Compile
 ```bash
-javac *.java ../../../solutions/1-1/billion-laughs/*.java
+javac *.java
 ```
 
 ### 2. Run the Exploit
