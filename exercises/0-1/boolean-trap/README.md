@@ -31,42 +31,6 @@ Run the exploit to see the leak in action:
 javac *.java
 java LoggerExploit
 ```
+Or run the same class with the SecureLogger.java in the same path to test the solution.
 
-You will see that a simple mistake in the boolean flag results in:
-`[PUBLIC LOG]: Database password is 'S3cr3tP@ss!'`
-
-## Secure Solution
-
-The most robust way to prevent the "Boolean Parameter Trap" is to use **Java Enums**. This makes the security intent explicit and the code self-documenting.
-
-### Option A: Using Enums (Recommended)
-
-Using an Enum forces the developer to choose a named constant, making the code much easier to read and harder to break.
-
-```java
-public class SecureLogger {
-    public enum LogType {
-        PUBLIC, SENSITIVE
-    }
-
-    public void log(String msg, LogType type) {
-        if (type == LogType.PUBLIC) {
-            System.out.println("[PUBLIC LOG]: " + msg);
-        } else {
-            System.out.println("[SENSITIVE INTERNAL LOG]: " + msg);
-        }
-    }
-}
-```
-
-### Option B: Separate Methods
-
-If an Enum is not suitable, providing separate, clearly named methods is a good alternative.
-
-```java
-public void logPublic(String msg) { ... }
-public void logSensitive(String msg) { ... }
-```
-
-Using these patterns ensures that the security level is never a "mystery" boolean value.
 
