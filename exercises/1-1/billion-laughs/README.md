@@ -63,3 +63,7 @@ factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true)
 ```
 
 If DTDs are required, you should enable secure processing and limit the uncompressed size and entity expansion counts.
+
+### References
+
+- https://en.wikipedia.org/wiki/Billion_laughs_attack
