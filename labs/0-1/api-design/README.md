@@ -23,5 +23,5 @@ bank.from(aliceId).to(bobId).amount(100.0);
 With this design, it is almost impossible to swap the accounts accidentally without the code looking obviously wrong.
 
 ## How to Run
-1. Compile: `javac labs/api_design/*.java`
-2. Run Exploit: `java labs.api_design.TransferExploit`
+1. Compile: `javac *.java`
+2. Run Exploit: `java TransferExploit`

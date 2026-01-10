@@ -1,5 +1,3 @@
-package labs.api_design;
-
 import java.util.HashMap;
 import java.util.Map;
 
