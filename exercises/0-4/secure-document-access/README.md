@@ -21,3 +21,16 @@ A common mistake is to trust that any identifier (like a `documentId` or `accoun
 
 ### Files
 - [VulnerableDocumentService.java](VulnerableDocumentService.java)
+- [DocumentAccessExploit.java](DocumentAccessExploit.java)
+
+### How to Run
+
+1.  **Observe the Vulnerability**:
+    Compile and run the exploit to see how Bob can access Alice's data:
+    ```bash
+    javac *.java
+    java DocumentAccessExploit
+    ```
+
+2.  **Verify the Fix**:
+    After implementing your `SecureDocumentService.java`, uncomment the test section in `DocumentAccessExploit.java`, recompile, and run again to verify the `SecurityException` is thrown.
