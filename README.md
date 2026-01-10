@@ -5,6 +5,7 @@ To minimize the likelihood of security vulnerabilities caused by programmer erro
 This repo contains labs, PoCs, experiments and exploits, related to the topics listed in Oracle's Java coding guidelines. 
 
 
+- [Lab 0-1](labs/0-1/api-design/README.md) / FUNDAMENTALS-1: Design APIs to avoid security concerns
 - [Lab 0-4](labs/0-4/trust-boundary/README.md) / FUNDAMENTALS-4: Establish trust boundaries
 - [Lab 1-1](labs/1-1/zip-bomb/README.md) / DOS-1: Beware of activities that may use disproportionate resources
 - [Lab 1-2](labs/1-2/resource-leak/README.md) / DOS-2: Release resources in all cases
@@ -19,6 +20,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 
 ### Exercises
 - [Exercise 0-1 (The boolean trap)](exercises/0-1/boolean-trap/README.md)
+- [Exercise 0-4 (Secure Document Access)](exercises/0-4/secure-document-access/README.md)
 - [Exercise 1-1 (Denial of Service - Billion Laughs)](exercises/1-1/billion-laughs/README.md)
 
 
