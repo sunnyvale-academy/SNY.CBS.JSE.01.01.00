@@ -9,6 +9,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 0-4](labs/0-4/trust-boundary/README.md) / FUNDAMENTALS-4: Establish trust boundaries
 - [Lab 1-1](labs/1-1/zip-bomb/README.md) / DOS-1: Beware of activities that may use disproportionate resources
 - [Lab 1-2](labs/1-2/resource-leak/README.md) / DOS-2: Release resources in all cases
+- [Lab 1-3](labs/1-3/integer-overflow/README.md) / DOS-3: Resource limit checks should not suffer from integer overflow
 - [Lab 2-1](labs/2-1/exception-leak/README.md) / CONFIDENTIAL-1: Purge sensitive information from exceptions
 - [Lab 3-2](labs/3-2/sql-injection/README.md) / INJECT-2: Avoid dynamic SQL
 - [Lab 4-1](labs/4-1/accessibility/README.md) / ACCESS-1: Limit the accessibility of classes, interfaces, methods, and fields
