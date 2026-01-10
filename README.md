@@ -22,6 +22,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 0-1 (The boolean trap)](exercises/0-1/boolean-trap/README.md)
 - [Exercise 0-4 (Secure Document Access)](exercises/0-4/secure-document-access/README.md)
 - [Exercise 1-1 (Denial of Service - Billion Laughs)](exercises/1-1/billion-laughs/README.md)
+- [Exercise 1-2 (Lock Release)](exercises/1-2/lock-release/README.md)
 
 
 References:
