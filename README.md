@@ -6,6 +6,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 
 
 - [Lab 0-1](labs/0-1/api-design/README.md) / FUNDAMENTALS-1: Design APIs to avoid security concerns
+- [Lab 0-3](labs/0-3/restrict-privileges/README.md) / FUNDAMENTALS-3: Restrict privileges
 - [Lab 0-4](labs/0-4/trust-boundary/README.md) / FUNDAMENTALS-4: Establish trust boundaries
 - [Lab 1-1](labs/1-1/zip-bomb/README.md) / DOS-1: Beware of activities that may use disproportionate resources
 - [Lab 1-2](labs/1-2/resource-leak/README.md) / DOS-2: Release resources in all cases
