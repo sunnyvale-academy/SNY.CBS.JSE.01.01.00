@@ -34,10 +34,4 @@ If `numElements` and `elementSize` are large enough, `numElements * elementSize`
     java OverflowExploit
     ```
     Observe how the vulnerable allocator fails to catch the overflow, while the secure one (once implemented) would.
-4.  **Fix the Vulnerability**: Implement a secure check in `SecureResourceAllocator.java`. Use one of the following methods:
-    *   Use `Math.multiplyExact(int, int)` which throws an `ArithmeticException` on overflow.
-    *   Perform the calculation using `long` and then check against the limit.
-    *   Check for bounds before multiplying (e.g., `numElements > MAX_ALLOWED_BYTES / elementSize`).
-
-## Verification
-After fixing the code, recompile and run the exploit again to ensure both allocators now correctly handle the overflow.
+4.  **Fixing the Vulnerability**: The secure check in `SecureResourceAllocator.java` checks for bounds before allocating.
