@@ -11,6 +11,8 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 1-1](labs/1-1/zip-bomb/README.md) / DOS-1: Beware of activities that may use disproportionate resources
 - [Lab 1-2](labs/1-2/resource-leak/README.md) / DOS-2: Release resources in all cases
 - [Lab 1-3](labs/1-3/integer-overflow/README.md) / DOS-3: Resource limit checks should not suffer from integer overflow
+- [Lab 1-4 (Robust Handling)](labs/1-4/robust-exception-handling/README.md) / DOS-4: Implement Robust Error/Exceptions handling for services
+- [Lab 1-4 (Uncaught Handler)](labs/1-4/uncaught-exception-handler/README.md) / DOS-4: Use Thread.UncaughtExceptionHandler for global safety nets
 - [Lab 2-1](labs/2-1/exception-leak/README.md) / CONFIDENTIAL-1: Purge sensitive information from exceptions
 - [Lab 3-2](labs/3-2/sql-injection/README.md) / INJECT-2: Avoid dynamic SQL
 - [Lab 4-1](labs/4-1/accessibility/README.md) / ACCESS-1: Limit the accessibility of classes, interfaces, methods, and fields
