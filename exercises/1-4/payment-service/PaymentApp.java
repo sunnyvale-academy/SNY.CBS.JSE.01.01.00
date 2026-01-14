@@ -12,10 +12,8 @@ public class PaymentApp {
         runVulnerableDemo();
 
         // TODO: Uncomment the following section after implementing your fix
-        /*
-         * System.out.println("\n-------------------------------------------");
-         * runSecureDemo();
-         */
+        System.out.println("\n-------------------------------------------");
+        runSecureDemo();
     }
 
     private static void runVulnerableDemo() {
@@ -41,29 +39,29 @@ public class PaymentApp {
         }
     }
 
-    /*
-     * private static void runSecureDemo() {
-     * System.out.println("--- Testing Secure Payment Service ---");
-     * 
-     * // 1. SET GLOBAL HANDLER
-     * Thread.setDefaultUncaughtExceptionHandler((t, e) -> {
-     * System.err.println("\n[SECURE AUDIT] Caught unexpected crash in: " +
-     * t.getName());
-     * System.err.println("[SECURE AUDIT] Error details logged internally.");
-     * });
-     * 
-     * SecurePaymentService service = new SecurePaymentService();
-     * 
-     * // Test information leak prevention
-     * System.out.println("Processing large payment...");
-     * String result = service.processPayment("card_123", 5000.0);
-     * System.out.println("Result: " + result);
-     * 
-     * // Test background crash visibility
-     * System.out.println("\nStarting background worker...");
-     * service.startAuditWorker();
-     * 
-     * try { Thread.sleep(1000); } catch (Exception e) {}
-     * }
-     */
+    private static void runSecureDemo() {
+        System.out.println("--- Testing Secure Payment Service ---");
+
+        // 1. SET GLOBAL HANDLER
+        Thread.setDefaultUncaughtExceptionHandler((t, e) -> {
+            System.err.println("\n[SECURE AUDIT] Caught unexpected crash in: " + t.getName());
+            System.err.println("[SECURE AUDIT] Error details logged internally.");
+        });
+
+        SecurePaymentService service = new SecurePaymentService();
+
+        // Test information leak prevention
+        System.out.println("Processing large payment...");
+        String result = service.processPayment("card_123", 5000.0);
+        System.out.println("Result: " + result);
+
+        // Test background crash visibility
+        System.out.println("\nStarting background worker...");
+        service.startAuditWorker();
+
+        try {
+            Thread.sleep(1000);
+        } catch (Exception e) {
+        }
+    }
 }
