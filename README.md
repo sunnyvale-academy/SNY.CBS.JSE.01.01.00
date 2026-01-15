@@ -31,6 +31,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 1-3 (Vulnerable File Manager)](exercises/1-3/vulnerable-file-manager/README.md)
 - [Exercise 1-4 (Robust Payment Service)](exercises/1-4/payment-service/README.md)
 - [Exercise 1-5 (Metadata Store Protection)](exercises/1-5/metadata-store/README.md)
+- [Exercise 2-1 (Ghost Paths)](exercises/2-1/ghost-paths/README.md)
 
 
 References:
