@@ -16,6 +16,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 1-5](labs/1-5/hash-collision/README.md) / DOS-5: Avoid using user input as hash keys (Hash Collision DoS)
 - [Lab 2-1](labs/2-1/exception-leak/README.md) / CONFIDENTIAL-1: Purge sensitive information from exceptions
 - [Lab 2-2](labs/2-2/shadow-logs/README.md) / CONFIDENTIAL-2: Do not log sensitive information
+- [Lab 2-3](labs/2-3/memory-zeroing/README.md) / CONFIDENTIAL-3: Purge sensitive information from memory after use
 - [Lab 3-2](labs/3-2/sql-injection/README.md) / INJECT-2: Avoid dynamic SQL
 - [Lab 4-1](labs/4-1/accessibility/README.md) / ACCESS-1: Limit the accessibility of classes, interfaces, methods, and fields
 - [Lab 5-1](labs/5-1/input-validation/README.md) / INPUT-1: Validate inputs
@@ -34,6 +35,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 1-5 (Metadata Store Protection)](exercises/1-5/metadata-store/README.md)
 - [Exercise 2-1 (Ghost Paths)](exercises/2-1/ghost-paths/README.md)
 - [Exercise 2-2 (Masked Transactions)](exercises/2-2/masked-transactions/README.md)
+- [Exercise 2-3 (The Vanishing Key)](exercises/2-3/vanishing-key/README.md)
 
 
 References:
