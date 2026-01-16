@@ -12,11 +12,11 @@ public class ProfileApp {
         System.out.println(system.generateProfileHeader("lightblue"));
 
         // 2. The Prank (Exploit)
-        // This payload closes the background-color and injects an alert via a malicious
-        // style
+        // Use this payload to close the background-color and injects an alert via a
+        // malicious style
         // Note: Real browser XSS in style attributes is tricky/rare now,
         // but breaking structure is easy.
-        String prankColor = "blue;\" onmouseover=\"alert('Pranked!')\" data-hack=\"";
+        String prankColor = "blue";
 
         System.out.println("\n[Action] Attempting prank with input: " + prankColor);
         String output = system.generateProfileHeader(prankColor);
