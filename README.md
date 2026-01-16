@@ -37,6 +37,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 2-1 (Ghost Paths)](exercises/2-1/ghost-paths/README.md)
 - [Exercise 2-2 (Masked Transactions)](exercises/2-2/masked-transactions/README.md)
 - [Exercise 2-3 (The Vanishing Key)](exercises/2-3/vanishing-key/README.md)
+- [Exercise 3-1 (The Broken Badge)](exercises/3-1/broken-badge/README.md)
 
 
 References:
