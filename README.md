@@ -19,6 +19,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 2-3](labs/2-3/memory-zeroing/README.md) / CONFIDENTIAL-3: Purge sensitive information from memory after use
 - [Lab 3-1](labs/3-1/valid-formatting/README.md) / INJECT-1: Generate valid formatting
 - [Lab 3-2](labs/3-2/sql-injection/README.md) / INJECT-2: Avoid dynamic SQL
+- [Lab 3-3](labs/3-3/contextual-injection/README.md) / INJECT-3: XML and HTML generation requires care
 - [Lab 4-1](labs/4-1/accessibility/README.md) / ACCESS-1: Limit the accessibility of classes, interfaces, methods, and fields
 - [Lab 5-1](labs/5-1/input-validation/README.md) / INPUT-1: Validate inputs
 - [Lab 6-2](labs/6-2/defensive-copy/README.md) / MUTABLE-2: Create copies of mutable output values
