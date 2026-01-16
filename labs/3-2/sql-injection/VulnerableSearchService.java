@@ -14,17 +14,24 @@ public class VulnerableSearchService {
      */
     public void searchUser(String username) {
         // VULNERABILITY: The query is built by concatenating the raw input string.
-        // An attacker can input SQL control characters like ' and OR to change the
-        // query's behavior.
         String query = "SELECT * FROM users WHERE username = '" + username + "'";
 
         System.out.println("--- Vulnerable Service ---");
         System.out.println("Raw Input: " + username);
-        System.out.println("Executing Query: " + query);
+        System.out.println("Generated Query: " + query);
 
-        // In a real application, this would be executed against a database.
-        // For this lab, we just print the resulting query string to show the injection.
-        System.out.println("Result: [Query logic potentially compromised if injection characters are present]");
+        // REALISTIC VALIDATION: Proving the SQL statement is syntactically valid
+        SqlParser parser = new SqlParser();
+        try {
+            String structure = parser.validate(query);
+            System.out.println("[SYNTAX CHECK] STATUS: VALID");
+            System.out.println("[SYNTAX CHECK] STRUCTURE: " + structure);
+        } catch (SqlParser.SyntaxException e) {
+            System.out.println("[SYNTAX CHECK] STATUS: INVALID");
+            System.out.println("[SYNTAX CHECK] ERROR: " + e.getMessage());
+        }
+
+        System.out.println("Result: [Query logic potentially compromised]");
         System.out.println("--------------------------\n");
     }
 }
