@@ -26,16 +26,9 @@ public class HeistApp {
         // Students should replace this with a malicious XML payload.
         String heistPayload = "<!-- CRAFT YOUR MALICIOUS XML HERE -->";
 
-        // Example of what a student might craft (for demonstration of the exploit)
-        String exploitXml = "<?xml version=\"1.0\"?>" +
-                "<!DOCTYPE root [" +
-                "  <!ENTITY heist SYSTEM \"file://" + passwordFile.getAbsolutePath() + "\">" +
-                "]>" +
-                "<report><status>&heist;</status></report>";
-
         System.out.println("\n[Action] Attempting heist...");
         // In the exercise, we show the result of a potential exploit
-        String result = manager.parseReport(exploitXml);
+        String result = manager.parseReport(heistPayload);
 
         System.out.println("\n[RESULTING OUTPUT]");
         System.out.println(result);
@@ -47,6 +40,5 @@ public class HeistApp {
         // Cleanup
         passwordFile.delete();
 
-        System.out.println("\nMISSION: Implement SecureDocManager to stop the heist!");
     }
 }
