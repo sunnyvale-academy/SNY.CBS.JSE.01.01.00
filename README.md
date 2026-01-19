@@ -44,6 +44,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 3-2 (The High Score Heist)](exercises/3-2/high-score-heist/README.md)
 - [Exercise 3-3 (The Profile Prank)](exercises/3-3/profile-prank/README.md)
 - [Exercise 3-4 (The Silent Command)](exercises/3-4/silent-command/README.md)
+- [Exercise 3-5 (The XML Heist)](exercises/3-5/xml-heist/README.md)
 
 
 References:
