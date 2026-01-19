@@ -10,10 +10,10 @@ public class HeistApp {
         System.out.println("=== Exercise 3-5: The XML Heist ===");
 
         // Setup: Create a sensitive "secret" file
-        File passwordFile = new File("db_passwords.txt");
-        try (FileWriter writer = new FileWriter(passwordFile)) {
-            writer.write("DB_USER=admin\nDB_PASS=S3cur3P@ssw0rd!_2024");
-        }
+        // File passwordFile = new File("db_passwords.txt");
+        // try (FileWriter writer = new FileWriter(passwordFile)) {
+        // writer.write("DB_USER=admin\nDB_PASS=S3cur3P@ssw0rd!_2024");
+        // }
 
         VulnerableDocManager manager = new VulnerableDocManager();
 
@@ -38,7 +38,7 @@ public class HeistApp {
         }
 
         // Cleanup
-        passwordFile.delete();
+        // passwordFile.delete();
 
     }
 }
