@@ -10,10 +10,10 @@ public class DiagnosticApp {
         System.out.println("=== Exercise 3-4: The Silent Command ===");
 
         // Setup: Create a sensitive file representing a "Flag" or secret
-        File secretFile = new File("server_secrets.txt");
-        try (FileWriter writer = new FileWriter(secretFile)) {
-            writer.write("CONFIDENTIAL_FLAG{COMMAND_INJECTION_SUCCESS}");
-        }
+        // File secretFile = new File("server_secrets.txt");
+        // try (FileWriter writer = new FileWriter(secretFile)) {
+        // writer.write("CONFIDENTIAL_FLAG{COMMAND_INJECTION_SUCCESS}");
+        // }
 
         VulnerableDiagnosticTool tool = new VulnerableDiagnosticTool();
 
@@ -36,7 +36,7 @@ public class DiagnosticApp {
         }
 
         // Cleanup
-        secretFile.delete();
+        // secretFile.delete();
 
         System.out.println("\nMISSION: Implement SecureDiagnosticTool to neutralize this attack!");
     }
