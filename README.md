@@ -21,6 +21,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 3-2](labs/3-2/sql-injection/README.md) / INJECT-2: Avoid dynamic SQL
 - [Lab 3-3](labs/3-3/contextual-injection/README.md) / INJECT-3: XML and HTML generation requires care
 - [Lab 3-4](labs/3-4/command-injection/README.md) / INJECT-4: Avoid untrusted data on the command line
+- [Lab 3-5](labs/3-5/xml-inclusion/README.md) / INJECT-5: Restrict XML inclusion
 - [Lab 4-1](labs/4-1/accessibility/README.md) / ACCESS-1: Limit the accessibility of classes, interfaces, methods, and fields
 - [Lab 5-1](labs/5-1/input-validation/README.md) / INPUT-1: Validate inputs
 - [Lab 6-2](labs/6-2/defensive-copy/README.md) / MUTABLE-2: Create copies of mutable output values
