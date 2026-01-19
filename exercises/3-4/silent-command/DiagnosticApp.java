@@ -16,6 +16,7 @@ public class DiagnosticApp {
         // }
 
         VulnerableDiagnosticTool tool = new VulnerableDiagnosticTool();
+        // SecureDiagnosticTool tool = new SecureDiagnosticTool();
 
         // 1. Normal Usage
         System.out.println("\n[Normal] Testing connectivity to 127.0.0.1...");
@@ -33,6 +34,8 @@ public class DiagnosticApp {
 
         if (result.contains("CONFIDENTIAL_FLAG")) {
             System.out.println("\n!!! HACK SUCCESSFUL: You captured the secret flag!");
+        } else {
+            System.out.println("\n!!! HACK FAILED: The secret flag is secure.");
         }
 
         // Cleanup
