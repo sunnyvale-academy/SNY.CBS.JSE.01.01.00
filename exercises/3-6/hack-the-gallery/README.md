@@ -15,7 +15,7 @@ According to [Guideline 3-6: Care with BMP files](https://www.oracle.com/java/te
 1.  **Analyze**: Open `VulnerableGallery.java` and identify how it processes the `Color-Profile-Reference`.
 2.  **Exploit**: Run `GalleryApp.java`. It simulates an attacker uploading a JPEG that references `/etc/passwd`.
 3.  **Confirm**: Observe the error messages. Can you distinguish between a file that exists and one that doesn't?
-4.  **Fix**: Implement a secure version in `solutions/3-6/hack-the-gallery/SecureGallery.java` that prevents this path injection.
+4.  **Fix**: Implement a secure version of the Gallery that prevents this path injection and test it.
 
 ## Compilation and Execution
 ```bash
