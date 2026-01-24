@@ -55,6 +55,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 3-8 (The XSLT Trap)](exercises/3-8/xslt-trap/)
 - [Exercise 3-9 (The Infinite Bidding Wars)](exercises/3-9/infinite-bidding/)
 - [Exercise 4-1 (The Hidden Discount Trick)](exercises/4-1/discount-trick/)
+- [Exercise 4-2 (Module Encapsulation)](exercises/4-2/module-encapsulation/)
 
 
 References:
