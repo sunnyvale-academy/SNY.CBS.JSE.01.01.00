@@ -26,7 +26,8 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 3-7](labs/3-7/swing-html-injection/README.md) / INJECT-7: Disable HTML display in Swing components
 - [Lab 3-8](labs/3-8/untrusted-code/README.md) / INJECT-8: Take care interpreting untrusted code
 - [Lab 3-9](labs/3-9/exceptional-floats/README.md) / INJECT-9: Prevent injection of exceptional floating point values
-- [Lab 4-1](labs/4-1/accessibility/README.md) / ACCESS-1: Limit the accessibility of classes, interfaces, methods, and fields
+- [Lab 3-9](labs/3-9/exceptional-floats/README.md) / INJECT-9: Prevent injection of exceptional floating point values
+- [Lab 4-1](labs/4-1/limit-accessibility/README.md) / ACCESS-1: Limit the accessibility of classes, interfaces, methods, and fields
 - [Lab 5-1](labs/5-1/input-validation/README.md) / INPUT-1: Validate inputs
 - [Lab 6-2](labs/6-2/defensive-copy/README.md) / MUTABLE-2: Create copies of mutable output values
 - [Lab 7-3](labs/7-3/finalizer-attack/README.md) / OBJ-3: Defend against partially initialized instances
