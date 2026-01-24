@@ -54,6 +54,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 3-7 (The Invisible Form)](exercises/3-7/invisible-form/)
 - [Exercise 3-8 (The XSLT Trap)](exercises/3-8/xslt-trap/)
 - [Exercise 3-9 (The Infinite Bidding Wars)](exercises/3-9/infinite-bidding/)
+- [Exercise 4-1: The Hidden Discount Trick](file:///Users/denismaggiorotto/My%20Drive/Documents/Sunnyvale/Academy/Java_secure_coding/repos/exercises/4-1/limit-accessibility/) ([Solution](file:///Users/denismaggiorotto/My%20Drive/Documents/Sunnyvale/Academy/Java_secure_coding/repos/solutions/4-1/limit-accessibility/))
 
 
 References:
