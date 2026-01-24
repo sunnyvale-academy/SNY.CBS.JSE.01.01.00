@@ -48,6 +48,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 3-4 (The Silent Command)](exercises/3-4/silent-command/README.md)
 - [Exercise 3-5: The XML Heist](file:///Users/denismaggiorotto/My%20Drive/Documents/Sunnyvale/Academy/Java_secure_coding/repos/exercises/3-5/xml-heist/) ([Solution](file:///Users/denismaggiorotto/My%20Drive/Documents/Sunnyvale/Academy/Java_secure_coding/repos/solutions/3-5/xml-heist/))
 - [Exercise 3-6: Hack the Gallery](file:///Users/denismaggiorotto/My%20Drive/Documents/Sunnyvale/Academy/Java_secure_coding/repos/exercises/3-6/hack-the-gallery/) ([Solution](file:///Users/denismaggiorotto/My%20Drive/Documents/Sunnyvale/Academy/Java_secure_coding/repos/solutions/3-6/hack-the-gallery/))
+- [Exercise 3-7: The Invisible Form](file:///Users/denismaggiorotto/My%20Drive/Documents/Sunnyvale/Academy/Java_secure_coding/repos/exercises/3-7/invisible-form/) ([Solution](file:///Users/denismaggiorotto/My%20Drive/Documents/Sunnyvale/Academy/Java_secure_coding/repos/solutions/3-7/invisible-form/))
 
 
 References:
