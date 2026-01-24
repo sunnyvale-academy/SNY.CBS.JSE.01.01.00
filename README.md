@@ -24,6 +24,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 3-5](labs/3-5/xml-inclusion/README.md) / INJECT-5: Restrict XML inclusion
 - [Lab 3-6](labs/3-6/bmp-icc-injection/README.md) / INJECT-6: Care with BMP files
 - [Lab 3-7](labs/3-7/swing-html-injection/README.md) / INJECT-7: Disable HTML display in Swing components
+- [Lab 3-8](labs/3-8/untrusted-code/README.md) / INJECT-8: Take care interpreting untrusted code
 - [Lab 4-1](labs/4-1/accessibility/README.md) / ACCESS-1: Limit the accessibility of classes, interfaces, methods, and fields
 - [Lab 5-1](labs/5-1/input-validation/README.md) / INPUT-1: Validate inputs
 - [Lab 6-2](labs/6-2/defensive-copy/README.md) / MUTABLE-2: Create copies of mutable output values
