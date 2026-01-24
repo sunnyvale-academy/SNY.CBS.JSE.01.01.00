@@ -9,7 +9,7 @@ However, the internal audit team has noticed several orders with a massive **90%
 1.  **Analyze**: Open `DiscountService.java`. Review the visibility of the methods. Is there a method that shouldn't be accessible to everyone?
 2.  **Exploit**: Run `PromotionalApp.java`. It simulates a regular customer who discovers an "internal-only" method.
 3.  **Confirm**: Observe the console output. Does the customer successfully apply an unauthorized administrative discount?
-4.  **Fix**: Implement a secure version in `solutions/4-1/discount-trick/SecureDiscountService.java` that restricts access to sensitive methods following [Guideline 4-1](https://www.oracle.com/java/technologies/javase/seccodeguide.html#4-1).
+4.  **Fix**: Implement a secure version `SecureDiscountService.java` that restricts access to sensitive methods following [Guideline 4-1](https://www.oracle.com/java/technologies/javase/seccodeguide.html#4-1).
 
 ## Instructions
 1.  Compile the exercise:
