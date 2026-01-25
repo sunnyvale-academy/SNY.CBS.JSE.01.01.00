@@ -57,6 +57,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 3-9 (The Infinite Bidding Wars)](exercises/3-9/infinite-bidding/)
 - [Exercise 4-1 (The Hidden Discount Trick)](exercises/4-1/discount-trick/)
 - [Exercise 4-2 (Module Encapsulation)](exercises/4-2/module-encapsulation/)
+- [Exercise 4-4 (Shadow Loader)](exercises/4-4/shadow-loader/README.md)
 
 
 References:
