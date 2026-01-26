@@ -61,6 +61,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 4-2 (Module Encapsulation)](exercises/4-2/module-encapsulation/)
 - [Exercise 4-4 (Shadow Loader)](exercises/4-4/shadow-loader/README.md)
 - [Exercise 4-5 (Sealed Payment Gateway)](exercises/4-5/sealed-payment-gateway/README.md)
+- [Exercise 4-6 (Redacting Logger)](exercises/4-6/redacting-logger/README.md)
 
 
 References:
