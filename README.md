@@ -29,6 +29,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 4-1](labs/4-1/limit-accessibility/README.md) / ACCESS-1: Limit the accessibility of classes, interfaces, methods, and fields
 - [Lab 4-2](labs/4-2/modules-internal/README.md) / EXTEND-2: Use modules to hide internal packages
 - [Lab 4-4](labs/4-4/classloader-exposure/README.md) / EXTEND-4: Limit exposure of ClassLoader instances
+- [Lab 4-5](labs/4-5/limit-extensibility/README.md) / EXTEND-5: Limit the extensibility of classes and methods
 - [Lab 5-1](labs/5-1/input-validation/README.md) / INPUT-1: Validate inputs
 - [Lab 6-2](labs/6-2/defensive-copy/README.md) / MUTABLE-2: Create copies of mutable output values
 - [Lab 7-3](labs/7-3/finalizer-attack/README.md) / OBJ-3: Defend against partially initialized instances
