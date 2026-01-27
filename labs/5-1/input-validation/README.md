@@ -1,62 +1,38 @@
-# Java Secure Coding: Guideline 5-1 - Validate Inputs
+# Lab 5-1: Validate Inputs
 
-## The Guideline (5-1 / INPUT-1)
+## Guideline Reference
+**Guideline 5-1 / INPUT-1: Validate inputs**
 
-The Java SE Security Coding Guidelines state: **"Validate inputs."**
+## Vulnerability Explanation
+Input from untrusted sources must be validated before use. Untrusted input includes not just external network data, but also internal method arguments when crossing trust boundaries. Failing to validate inputs can lead to:
+- **Business Logic Errors**: e.g., allowing negative quantities in an order, which might result in unauthorized refunds.
+- **Technical Vulnerabilities**: e.g., integer overflows that cause calculations to wrap around, potentially bypassing price checks or leading to buffer overflows in other languages.
 
-All data received from an external or untrusted source must be validated before use. This includes checking for expected ranges, types, formats, and potential malicious characters. Validation should happen as early as possible ("Fail Fast").
+In this lab:
+1. `VulnerableOrderService` takes an `Order` object but doesn't check if `quantity` or `price` are positive.
+2. It calculates the total using simple multiplication (`quantity * price`), which can overflow the 32-bit `int` range.
 
-## The Vulnerability (VulnerableInventoryService.java)
+## Instructions
+1.  **Compile the code**:
+    ```bash
+    javac com/security/order/*.java
+    ```
 
-In `VulnerableInventoryService.java`, the `processOrder` method accepts `quantity` and `price` without any checks.
+2.  **Run the lab**:
+    ```bash
+    java com.security.order.LabRunner
+    ```
+    Observe how negative quantities result in negative totals, and large quantities result in overflowed values.
 
-```java
-public void processOrder(int quantity, double price) {
-    // VULNERABILITY: No validation
-    double total = quantity * price;
-    // ...
-}
-```
+3.  **Fix the vulnerability**:
+    Update `VulnerableOrderService.java` to:
+    -   Validate that `quantity` and `pricePerUnit` are strictly positive (using `if` statements).
+    -   Use `Math.multiplyExact(int, int)` for the calculation. This method throws an `ArithmeticException` if the result overflows, preventing silent wrap-around errors.
 
-If an attacker provides a negative quantity, the resulting total will be negative. In a financial system, this could lead to unauthorized refunds, price manipulation, or negative account balances.
+4.  **Verify the fix**:
+    Recompile and run. The service should now reject invalid input or crash safely with an exception instead of producing incorrect financial results.
 
-## The Exploit (InputValidationExploit.java)
-
-The `InputValidationExploit.java` demonstrates how missing validation can lead to incorrect logic execution:
-
-```java
-vulnerableService.processOrder(-50, 100.0);
-```
-
-The output shows a negative total of `$-5000.0`, which the system treats as a valid (though logically impossible) order.
-
-## The Secure Solution (SecureInventoryService.java)
-
-The solution is to explicitly check all input parameters against their expected bounds at the beginning of the method.
-
-```java
-public void processOrder(int quantity, double price) {
-    // SECURE: Boundary checks
-    if (quantity <= 0) {
-        throw new IllegalArgumentException("Quantity must be a positive integer.");
-    }
-    if (price < 0) {
-        throw new IllegalArgumentException("Price cannot be negative.");
-    }
-    // ...
-}
-```
-
-## How to Run the Lab
-
-### 1. Compile
-```bash
-javac *.java
-```
-
-### 2. Run the Exploit
-```bash
-java InputValidationExploit
-```
-
-Observe how the `Vulnerable Service` blindly processes negative quantities, while the `Secure Service` raises an `IllegalArgumentException` and stops execution.
+## Key Takeaways
+- Always validate numeric inputs for range and validity.
+- Use overflow-aware methods like `Math.addExact`, `Math.multiplyExact`, etc., for sensitive calculations.
+- Validation should happen as early as possible after receiving input.
