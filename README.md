@@ -64,6 +64,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 4-5 (Sealed Payment Gateway)](exercises/4-5/sealed-payment-gateway/README.md)
 - [Exercise 4-6 (Redacting Logger)](exercises/4-6/redacting-logger/README.md)
 - [Exercise 5-1 (The Magic Withdrawal)](exercises/5-1/bank-transfer/README.md)
+- [Exercise 5-2 (The Discount Deceit)](exercises/5-2/discount-service/README.md)
 
 
 References:
