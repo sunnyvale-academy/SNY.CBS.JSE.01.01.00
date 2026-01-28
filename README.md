@@ -33,6 +33,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 4-6](labs/4-6/superclass-behavior/README.md) / EXTEND-6: Understand how a superclass can affect subclass behavior
 - [Lab 5-1](labs/5-1/input-validation/README.md) / INPUT-1: Validate inputs
 - [Lab 5-2](labs/5-2/untrusted-objects/README.md) / INPUT-2: Validate output from untrusted objects as input
+- [Lab 5-3](labs/5-3/native-wrappers/README.md) / INPUT-3: Define wrappers around native methods
 - [Lab 6-2](labs/6-2/defensive-copy/README.md) / MUTABLE-2: Create copies of mutable output values
 - [Lab 7-3](labs/7-3/finalizer-attack/README.md) / OBJ-3: Defend against partially initialized instances
 - [Lab 8-3](labs/8-3/deserialization/README.md) / SERIAL-3: View deserialization the same as object construction
