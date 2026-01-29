@@ -37,5 +37,22 @@ public class MaliciousUser {
         // Start is now AFTER end, even though the constructor checks for this
         start.setTime(end.getTime() + 100000);
         System.out.println("Corrupted period (start > end): " + period);
+
+        System.out.println("\n--- Scenario 4: Attempting to exploit SecurePeriod ---");
+        java.time.Instant s = java.time.Instant.now();
+        java.time.Instant e = s.plusSeconds(100);
+        SecurePeriod securePeriod = new SecurePeriod(s, e);
+        System.out.println("Secure period: " + securePeriod);
+
+        // There is no way to modify 's' or 'e' to affect 'securePeriod'
+        // Instant is immutable. Any method like plusSeconds returns a NEW Instant.
+        s = s.plusSeconds(1000000);
+        System.out.println("Modified 's' variable, but securePeriod.start() remains: " + securePeriod.start());
+
+        if (securePeriod.start().equals(s)) {
+            System.out.println("VULNERABLE: securePeriod was modified!");
+        } else {
+            System.out.println("SECURE: securePeriod remained unchanged.");
+        }
     }
 }
