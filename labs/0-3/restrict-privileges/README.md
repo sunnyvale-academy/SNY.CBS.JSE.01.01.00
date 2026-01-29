@@ -27,7 +27,7 @@ This lab consists of two parts:
     ```
 2.  **Run the Legacy Lab**:
     ```bash
-    java LegacySecurityManagerLab
+    java -Djava.security.manager LegacySecurityManagerLab
     ```
     Observe how the `SecurityManager` throws a `AccessControlException` (or similar depending on your JDK version). Note the deprecation warning.
 3.  **Run the Modern Lab**:
