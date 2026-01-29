@@ -16,7 +16,7 @@ public class ProfileApp {
         // malicious style
         // Note: Real browser XSS in style attributes is tricky/rare now,
         // but breaking structure is easy.
-        String prankColor = "blue";
+        String prankColor = "blue; height: 500px; background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Anonymous.svg/500px-Anonymous.svg.png')";
 
         System.out.println("\n[Action] Attempting prank with input: " + prankColor);
         String output = system.generateProfileHeader(prankColor);
@@ -24,9 +24,9 @@ public class ProfileApp {
         System.out.println("\n[RESULTING HTML]");
         System.out.println(output);
 
-        if (output.contains("onmouseover=")) {
+        if (output.contains("onmouseover=") || output.contains("Anonymous")) {
             System.out.println(
-                    "\n!!! PRANK SUCCESSFUL: The 'style' attribute was broken and 'onmouseover' was injected!");
+                    "\n!!! PRANK SUCCESSFUL: The 'style' attribute was broken and malicious content injected!!!!");
         }
 
         System.out.println("\nMISSION: Implement SecureProfileSystem to stop the prank!");
