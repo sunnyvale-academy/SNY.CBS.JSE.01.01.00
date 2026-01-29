@@ -19,20 +19,23 @@ public class SecureXmlGenerator {
         DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
 
-        // Root element
         Document doc = docBuilder.newDocument();
-        Element rootElement = doc.createElement("user");
+        Element rootElement = doc.createElement("users");
         doc.appendChild(rootElement);
+
+        // Root element
+        Element rootElement1 = doc.createElement("user");
+        rootElement.appendChild(rootElement1);
 
         // Username element
         Element userElement = doc.createElement("username");
         userElement.appendChild(doc.createTextNode(username));
-        rootElement.appendChild(userElement);
+        rootElement1.appendChild(userElement);
 
         // Role element
         Element roleElement = doc.createElement("role");
         roleElement.appendChild(doc.createTextNode(role));
-        rootElement.appendChild(roleElement);
+        rootElement1.appendChild(roleElement);
 
         // Convert the document to a string
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
