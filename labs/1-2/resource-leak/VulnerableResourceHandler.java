@@ -13,6 +13,7 @@ public class VulnerableResourceHandler {
             if (throwException) {
                 throw new IOException("Simulating an error during processing.");
             }
+            writer.close();
         } finally {
             // CRITICAL VULNERABILITY: The FileWriter is NOT closed here.
             // If an exception occurs (e.g., during writer.write() or if throwException is true),
