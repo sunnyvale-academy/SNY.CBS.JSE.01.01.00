@@ -35,6 +35,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 5-2](labs/5-2/untrusted-objects/README.md) / INPUT-2: Validate output from untrusted objects as input
 - [Lab 5-3](labs/5-3/native-wrappers/README.md) / INPUT-3: Define wrappers around native methods
 - [Lab 5-4](labs/5-4/api-verification/README.md) / INPUT-4: Verify API behavior related to input validation
+- [Lab 6-1](labs/6-1/mutable-value-types/README.md) / MUTABLE-1: Prefer immutability for value types
 - [Lab 6-2](labs/6-2/defensive-copy/README.md) / MUTABLE-2: Create copies of mutable output values
 - [Lab 7-3](labs/7-3/finalizer-attack/README.md) / OBJ-3: Defend against partially initialized instances
 - [Lab 8-3](labs/8-3/deserialization/README.md) / SERIAL-3: View deserialization the same as object construction
