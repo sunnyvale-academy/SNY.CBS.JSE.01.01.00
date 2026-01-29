@@ -27,6 +27,7 @@ public class VulnerableLockHandler {
 
             // To make it an exercise, we'll intentionally leave the unlock()
             // vulnerable to being skipped if an exception occurs above if handled poorly.
+            // lock.unlock();
         }
 
         // If we put unlock here, outside the finally, it's skipped on exception.
