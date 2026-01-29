@@ -11,6 +11,7 @@ public class SecureConfigLoader {
     public Properties loadConfig(String configData) {
         System.out.println("[Secure] Loading config using java.util.Properties...");
 
+        // SECURE: use Properties class to store config as key/value pairs
         Properties props = new Properties();
         try (InputStream is = new ByteArrayInputStream(configData.getBytes())) {
             // SECURE: Properties.load() only parses key=value pairs.
