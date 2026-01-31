@@ -12,23 +12,31 @@ Even if you intend a class to be a singleton or use static constants, if there's
 - `AccessLevel.java`: A class with static constants but a public constructor.
 - `GateService.java`: Uses `==` to block guests from the vault.
 - `BypassLab.java`: Demonstrates the bypass attack.
+- `SecureAccessLevel.java`: An `enum` version that is safe from identity forgery.
+- `SecureGateService.java`: A service that correctly uses the enum.
+- `SecureLabDemo.java`: A program that demonstrates the safety of the enum approach.
 
 ## Instructions
 
-1.  **Compile and Run the Lab**:
+### Part 1: Observe the Vulnerability
+1.  **Compile and Run the vulnerable lab**:
     ```bash
     javac *.java
     java BypassLab
     ```
-
 2.  **Analyze the Failure**:
     - Observe how the forged guest with name "GUEST" is allowed into the vault.
     - The `GateService` only blocks the specific object `AccessLevel.GUEST`. Since `fakeGuest` is a different object in memory, the check returns `false`, and access is granted.
 
-3.  **Inspect the Fixes**:
-    Read `SecureAccessLevel.java`. 
+### Part 2: Verify the Secure Solution
+1.  **Run the secure demo**:
+    ```bash
+    java SecureLabDemo
+    ```
+2.  **Inspect the Fixes**:
+    Read `SecureAccessLevel.java` and `SecureGateService.java`. 
     - **Using Enums**: This is the best fix. JVM guarantees enums have unique instances, making `==` safe.
-    - **Alternative**: If you must use a class, make the constructor `private`, provide no ways to duplicate it, and **use `.equals()`** for security checks.
+    - **Outcome**: It is impossible for an attacker to create a second "GUEST" instance to bypass the check.
 
 ## Key Takeaway
 **Never use `==` for security-critical logic on objects** unless the type is an `enum` or you have absolute control over object instantiation and identity. Always prefer `.equals()` or state-based checks (e.g., `level.getName().equals("GUEST")`).
