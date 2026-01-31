@@ -69,6 +69,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 5-1 (The Magic Withdrawal)](exercises/5-1/bank-transfer/README.md)
 - [Exercise 5-2 (The Discount Deceit)](exercises/5-2/discount-service/README.md)
 - [Exercise 5-3 (The Buffer Boundary)](exercises/5-3/native-buffer/README.md)
+- [Exercise 6-1 (The GPS Tamperer)](exercises/6-1/gps-tracker/README.md)
 
 
 References:
