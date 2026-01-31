@@ -42,6 +42,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 6-5](labs/6-5/identity-trap/README.md) / MUTABLE-5: Do not trust identity equality when overridable on input reference objects
 - [Lab 6-6](labs/6-6/leaky-callback/README.md) / MUTABLE-6: Treat passing input to untrusted object as output
 - [Lab 6-7](labs/6-7/untrusted-provider/README.md) / MUTABLE-7: Treat output from untrusted object as input
+- [Lab 6-8](labs/6-8/restricted-inventory/README.md) / MUTABLE-8: Define wrapper methods around modifiable internal state
 - [Lab 7-3](labs/7-3/finalizer-attack/README.md) / OBJ-3: Defend against partially initialized instances
 - [Lab 8-3](labs/8-3/deserialization/README.md) / SERIAL-3: View deserialization the same as object construction
 - [Lab 9-3](labs/9-3/privileged-action/README.md) / ACCESS-3: Safely invoke doPrivileged
