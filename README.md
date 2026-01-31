@@ -40,6 +40,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 6-3](labs/6-3/safe-copying/README.md) / MUTABLE-3: Create safe copies of mutable and subclassable input values
 - [Lab 6-4](labs/6-4/copy-support/README.md) / MUTABLE-4: Support copy functionality for a mutable class
 - [Lab 6-5](labs/6-5/identity-trap/README.md) / MUTABLE-5: Do not trust identity equality when overridable on input reference objects
+- [Lab 6-6](labs/6-6/leaky-callback/README.md) / MUTABLE-6: Treat passing input to untrusted object as output
 - [Lab 7-3](labs/7-3/finalizer-attack/README.md) / OBJ-3: Defend against partially initialized instances
 - [Lab 8-3](labs/8-3/deserialization/README.md) / SERIAL-3: View deserialization the same as object construction
 - [Lab 9-3](labs/9-3/privileged-action/README.md) / ACCESS-3: Safely invoke doPrivileged
