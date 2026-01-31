@@ -72,6 +72,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 5-3 (The Buffer Boundary)](exercises/5-3/native-buffer/README.md)
 - [Exercise 6-1 (The GPS Tamperer)](exercises/6-1/gps-tracker/README.md)
 - [Exercise 6-2 (The Payroll Sabotage)](exercises/6-2/payroll-system/README.md)
+- [Exercise 6-3 (The Schedule Hijack)](exercises/6-3/schedule-hijack/README.md)
 - [Final Challenge (The Legacy Bank Heist)](exercises/final-challenge/legacy-bank/README.md)
 
 
