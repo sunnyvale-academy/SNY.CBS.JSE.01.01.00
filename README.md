@@ -37,6 +37,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 5-4](labs/5-4/api-verification/README.md) / INPUT-4: Verify API behavior related to input validation
 - [Lab 6-1](labs/6-1/mutable-value-types/README.md) / MUTABLE-1: Prefer immutability for value types
 - [Lab 6-2](labs/6-2/defensive-copy/README.md) / MUTABLE-2: Create copies of mutable output values
+- [Lab 6-3](labs/6-3/safe-copying/README.md) / MUTABLE-3: Create safe copies of mutable and subclassable input values
 - [Lab 7-3](labs/7-3/finalizer-attack/README.md) / OBJ-3: Defend against partially initialized instances
 - [Lab 8-3](labs/8-3/deserialization/README.md) / SERIAL-3: View deserialization the same as object construction
 - [Lab 9-3](labs/9-3/privileged-action/README.md) / ACCESS-3: Safely invoke doPrivileged
