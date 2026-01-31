@@ -70,6 +70,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 5-2 (The Discount Deceit)](exercises/5-2/discount-service/README.md)
 - [Exercise 5-3 (The Buffer Boundary)](exercises/5-3/native-buffer/README.md)
 - [Exercise 6-1 (The GPS Tamperer)](exercises/6-1/gps-tracker/README.md)
+- [Final Challenge (The Legacy Bank Heist)](exercises/final-challenge/legacy-bank/README.md)
 
 
 References:
