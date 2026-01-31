@@ -76,6 +76,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 6-2 (The Payroll Sabotage)](exercises/6-2/payroll-system/README.md)
 - [Exercise 6-3 (The Schedule Hijack)](exercises/6-3/schedule-hijack/README.md)
 - [Exercise 6-4 (The Config Experiment)](exercises/6-4/config-manager/README.md)
+- [Exercise 6-5 (The Forged Ticket)](exercises/6-5/ticket-manager/README.md)
 - [Final Challenge (The Legacy Bank Heist)](exercises/final-challenge/legacy-bank/README.md)
 
 
