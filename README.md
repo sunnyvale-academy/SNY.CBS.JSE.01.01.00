@@ -80,6 +80,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 6-4 (The Config Experiment)](exercises/6-4/config-manager/README.md)
 - [Exercise 6-5 (The Forged Ticket)](exercises/6-5/ticket-manager/README.md)
 - [Exercise 6-6 (The Sabotaged Auditor)](exercises/6-6/audit-system/README.md)
+- [Exercise 6-7 (The Hijacked Sensor)](exercises/6-7/hijacked-sensor/README.md)
 - [Final Challenge (The Legacy Bank Heist)](exercises/final-challenge/legacy-bank/README.md)
 
 
