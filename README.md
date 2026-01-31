@@ -84,6 +84,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 6-6 (The Sabotaged Auditor)](exercises/6-6/audit-system/README.md)
 - [Exercise 6-7 (The Hijacked Sensor)](exercises/6-7/hijacked-sensor/README.md)
 - [Exercise 6-8 (The Bypassed RBAC)](exercises/6-8/role-manager/README.md)
+- [Exercise 6-9 (The Master Key Injection)](exercises/6-9/master-key/README.md)
 - [Final Challenge (The Legacy Bank Heist)](exercises/final-challenge/legacy-bank/README.md)
 
 
