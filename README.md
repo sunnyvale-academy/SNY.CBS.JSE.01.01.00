@@ -55,6 +55,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 8-2](labs/8-2/guard-serialization/README.md) / SERIAL-2: Guard sensitive data during serialization
 - [Lab 8-3](labs/8-3/deserialization/README.md) / SERIAL-3: View deserialization the same as object construction
 - [Lab 8-4](labs/8-4/duplicate-checks/README.md) / SERIAL-4: Duplicate the security-related checks performed in a class during serialization and deserialization
+- [Lab 8-6](labs/8-6/filter-serialization/README.md) / SERIAL-6: Filter untrusted serial data
 - [Lab 9-3](labs/9-3/privileged-action/README.md) / ACCESS-3: Safely invoke doPrivileged
 
 ### Exercises
