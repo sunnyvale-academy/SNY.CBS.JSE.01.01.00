@@ -102,6 +102,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 7-5 (The Identity Duplicator)](exercises/7-5/identity-duplicator/README.md)
 - [Exercise 8-1 (The Leaking Token)](exercises/8-1/leaking-token/README.md)
 - [Exercise 8-2 (The Exposed Credentials)](exercises/8-2/exposed-credentials/README.md)
+- [Exercise 8-3 (The Impossible Range)](exercises/8-3/impossible-range/README.md)
 - [Final Challenge (The Legacy Bank Heist)](exercises/final-challenge/legacy-bank/README.md)
 
 
