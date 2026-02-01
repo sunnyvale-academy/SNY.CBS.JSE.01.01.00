@@ -92,6 +92,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 6-10 (The Sabotaged Limit)](exercises/6-10/resource-limit/README.md)
 - [Exercise 6-11 (The Maintenance Bypass)](exercises/6-11/maintenance-bypass/README.md)
 - [Exercise 6-12 (The Bypassed Blacklist)](exercises/6-12/bypassed-blacklist/README.md)
+- [Exercise 7-1 (The Unauthorized Vault Key)](exercises/7-1/vault-key-bypass/README.md)
 - [Final Challenge (The Legacy Bank Heist)](exercises/final-challenge/legacy-bank/README.md)
 
 
