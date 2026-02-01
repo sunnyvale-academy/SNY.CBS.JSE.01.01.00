@@ -17,7 +17,7 @@ public class SecureSession implements Session {
      */
     public static SecureSession createSession(String userId, String token) {
         if ("SECRET-VAL-123".equals(token)) {
-            return new SecureSession(userId, "USER");
+            return new SecureSession(userId, "ADMIN");
         }
         return null;
     }
