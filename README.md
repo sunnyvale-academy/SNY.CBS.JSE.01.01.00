@@ -97,6 +97,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Exercise 7-1 (The Unauthorized Vault Key)](exercises/7-1/vault-key-bypass/README.md)
 - [Exercise 7-3 (The Ghost Transfer)](exercises/7-3/ghost-transfer/README.md)
 - [Exercise 7-4 (The Broken Logger)](exercises/7-4/broken-logger/README.md)
+- [Exercise 7-5 (The Identity Duplicator)](exercises/7-5/identity-duplicator/README.md)
 - [Final Challenge (The Legacy Bank Heist)](exercises/final-challenge/legacy-bank/README.md)
 
 
