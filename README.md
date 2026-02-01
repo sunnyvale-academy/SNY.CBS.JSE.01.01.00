@@ -46,6 +46,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 6-9](labs/6-9/global-hijack/README.md) / MUTABLE-9: Make public static fields final
 - [Lab 6-10](labs/6-10/mutable-constant/README.md) / MUTABLE-10: Ensure public static final field values are constants
 - [Lab 6-11](labs/6-11/hijacked-counter/README.md) / MUTABLE-11: Do not expose mutable statics
+- [Lab 6-12](labs/6-12/poisoned-list/README.md) / MUTABLE-12: Do not expose modifiable collections
 - [Lab 7-3](labs/7-3/finalizer-attack/README.md) / OBJ-3: Defend against partially initialized instances
 - [Lab 8-3](labs/8-3/deserialization/README.md) / SERIAL-3: View deserialization the same as object construction
 - [Lab 9-3](labs/9-3/privileged-action/README.md) / ACCESS-3: Safely invoke doPrivileged
