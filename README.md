@@ -49,6 +49,7 @@ This repo contains labs, PoCs, experiments and exploits, related to the topics l
 - [Lab 6-12](labs/6-12/poisoned-list/README.md) / MUTABLE-12: Do not expose modifiable collections
 - [Lab 7-1](labs/7-1/hidden-constructor/README.md) / OBJECT-1: Avoid exposing constructors of sensitive classes
 - [Lab 7-3](labs/7-3/finalizer-attack/README.md) / OBJ-3: Defend against partially initialized instances
+- [Lab 7-4](labs/7-4/constructor-trap/README.md) / OBJ-4: Prevent constructors from calling methods that can be overridden
 - [Lab 8-3](labs/8-3/deserialization/README.md) / SERIAL-3: View deserialization the same as object construction
 - [Lab 9-3](labs/9-3/privileged-action/README.md) / ACCESS-3: Safely invoke doPrivileged
 
