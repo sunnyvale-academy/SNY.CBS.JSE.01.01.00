@@ -28,10 +28,7 @@ public class BankApp {
         processor.transfer(alice, bob, -1000); // Alice "steals" from Bob
         System.out.println("Alice's balance: " + alice.balance);
 
-        // 2/9. Exceptions & doPrivileged
-        InternalLogViewer logViewer = new InternalLogViewer();
-        logViewer.readLog("/etc/passwd"); // Attempt traversal
-
+        // 2. Exceptions
         BankService service = new BankService();
         try {
             service.performTransaction(null);

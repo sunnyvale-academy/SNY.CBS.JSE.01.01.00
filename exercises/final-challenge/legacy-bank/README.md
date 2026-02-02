@@ -6,7 +6,7 @@ You have been hired as a security auditor for "Legacy Bank", a financial institu
 Your mission is to perform a thorough security audit of the provided codebase, identify all vulnerabilities that violate the Oracle Secure Coding Guidelines, and fix them.
 
 ## The Challenge
-The application contains at least 10 major vulnerabilities spanning from section 0 to 9 of the guidelines.
+The application contains at least 9 major vulnerabilities spanning from section 0 to 8 of the guidelines.
 
 ### Your Tasks:
 1.  **Audit the Code**: Read through all the `.java` files in this directory.
@@ -28,7 +28,6 @@ The application contains at least 10 major vulnerabilities spanning from section
 - [ ] **Section 5**: Missing input validation.
 - [ ] **Section 7**: Object creation (finalizer attack).
 - [ ] **Section 8**: Unsafe deserialization.
-- [ ] **Section 9**: Unsafe use of `doPrivileged`.
 
 ## Useful Guidelines to Review:
 - **0-4**: Establish trust boundaries.
@@ -40,4 +39,3 @@ The application contains at least 10 major vulnerabilities spanning from section
 - **6-1**: Prefer immutability for value types.
 - **7-3**: Defend against partially initialized instances.
 - **8-3**: View deserialization the same as object construction.
-- **9-3**: Safely invoke `doPrivileged`.
