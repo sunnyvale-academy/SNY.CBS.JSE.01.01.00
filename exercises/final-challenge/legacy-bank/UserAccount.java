@@ -1,4 +1,7 @@
 import java.util.Date;
+import java.util.List;
+import java.util.ArrayList;
+import java.io.Serializable;
 
 /**
  * VULNERABLE CLASS: UserAccount
@@ -12,17 +15,25 @@ public class UserAccount {
     public String password; // Should be private/hashed
     public long balance; // Should be private
     public Date lastLogin; // Mutable value type
+    public List<String> roles; // Mutable collection
 
     public UserAccount(String username, String password, long initialBalance) {
         this.username = username;
         this.password = password;
         this.balance = initialBalance;
         this.lastLogin = new Date();
+        this.roles = new ArrayList<>();
+        this.roles.add("USER");
     }
 
     // Vulnerable: Returns internal reference to mutable Date object
     public Date getLastLogin() {
         return lastLogin;
+    }
+
+    // Vulnerable: Returns internal reference to mutable List
+    public List<String> getRoles() {
+        return roles;
     }
 
     @Override

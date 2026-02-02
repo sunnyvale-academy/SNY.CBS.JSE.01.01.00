@@ -6,7 +6,7 @@ You have been hired as a security auditor for "Legacy Bank", a financial institu
 Your mission is to perform a thorough security audit of the provided codebase, identify all vulnerabilities that violate the Oracle Secure Coding Guidelines, and fix them.
 
 ## The Challenge
-The application contains at least 9 major vulnerabilities spanning from section 0 to 8 of the guidelines.
+The application contains at least 13 major vulnerabilities spanning from section 0 to 8 of the guidelines.
 
 ### Your Tasks:
 1.  **Audit the Code**: Read through all the `.java` files in this directory.
@@ -24,10 +24,9 @@ The application contains at least 9 major vulnerabilities spanning from section 
 - [ ] **Section 1**: Denial of Service (Integer Overflow).
 - [ ] **Section 2**: Information disclosure in exceptions.
 - [ ] **Section 3**: Injection (SQL Injection).
-- [ ] **Section 4/6**: Accessibility of fields and mutable value types.
-- [ ] **Section 5**: Missing input validation.
-- [ ] **Section 7**: Object creation (finalizer attack).
-- [ ] **Section 8**: Unsafe deserialization.
+- [ ] **Section 6**: Lack of defensive copying (MUTABLE-3) and exposure of internal collections (MUTABLE-12).
+- [ ] **Section 7**: Object creation (finalizer attack and constructor trap).
+- [ ] **Section 8**: Unsafe deserialization and missing duplicate checks.
 
 ## Useful Guidelines to Review:
 - **0-4**: Establish trust boundaries.
@@ -36,6 +35,6 @@ The application contains at least 9 major vulnerabilities spanning from section 
 - **3-2**: Avoid dynamic SQL.
 - **4-1**: Limit the accessibility of fields.
 - **5-1**: Validate inputs.
-- **6-1**: Prefer immutability for value types.
-- **7-3**: Defend against partially initialized instances.
-- **8-3**: View deserialization the same as object construction.
+- **6-1, 6-3, 6-12**: Immutability, defensive copying, and avoiding exposure of internal state.
+- **7-3, 7-4**: Defend against partially initialized instances and constructor traps.
+- **8-3, 8-4**: Deserialization safety and duplicating security checks.

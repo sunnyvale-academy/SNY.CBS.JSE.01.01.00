@@ -1,4 +1,5 @@
-import java.io.File;
+import java.io.*;
+import java.util.*;
 
 public class BankApp {
     public static void main(String[] args) {
@@ -35,6 +36,49 @@ public class BankApp {
         } catch (Exception e) {
         }
 
-        System.out.println("--- End of Demo ---");
+        // 6. Mutable Collection (MUTABLE-12)
+        System.out.println("\n[6] Mutating Roles...");
+        bob.getRoles().add("ADMIN"); // Bob makes himself admin!
+        System.out.println("Bob's roles: " + bob.getRoles());
+
+        // 6. Lack of Defensive Copy (MUTABLE-3)
+        System.out.println("\n[6] Hijacking Transaction History...");
+        List<String> txs = new ArrayList<>();
+        txs.add("Deposit 100");
+        TransactionHistory history = new TransactionHistory(txs);
+        txs.clear(); // History is now empty!
+        history.showHistory();
+
+        // 7. Constructor Trap (OBJ-4)
+        System.out.println("\n[7] Triggering Constructor Trap...");
+        BaseGateway gateway = new InsecureGateway();
+
+        // 8. Unsafe Deserialization (SERIAL-4)
+        System.out.println("\n[8] Bypassing checks via Deserialization...");
+        try {
+            ExportableReport report = new ExportableReport("Secret", "CONFIDENTIAL: Plan for heist");
+            byte[] data = serialize(report);
+            // Imagine we modify the data here to bypass some newer check...
+            Object obj = deserialize(data);
+            System.out.println("Recovered: " + obj);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        System.out.println("\n--- End of Demo ---");
+    }
+
+    private static byte[] serialize(Object obj) throws IOException {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        try (ObjectOutputStream oos = new ObjectOutputStream(baos)) {
+            oos.writeObject(obj);
+        }
+        return baos.toByteArray();
+    }
+
+    private static Object deserialize(byte[] data) throws Exception {
+        try (ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(data))) {
+            return ois.readObject();
+        }
     }
 }
